@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-9">
+      <h1>Celebrities</h1>
+      {{#each celebrities}}
+        <div class="row">
+
+          <div class="col">
+            <h3>{{this.name}}</h3>
+          </div>
+          <div class="col">
+            <a
+              href="/celebrities/{{this._id}}"
+              class="btn btn-sm btn-outline-dark"
+            >View details</a>
+          </div>
+        </div>
+      {{/each}}
+
+      <a href="/celebrities/create" class="btn btn-sm btn-outline-dark">Add new
+        celebrity</a>
+      <a href="/" class="btn btn-sm btn-outline-dark">Go back</a>
+    </div>
+  </div>
+</div>

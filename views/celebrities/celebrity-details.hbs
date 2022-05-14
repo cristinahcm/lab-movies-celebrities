@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-9">
+      <h2>{{name}}</h2>
+      <p>Occupation: {{occupation}}</p>
+      <p>Catch phrase: {{catchPhrase}}</p>
+      </p>
+      <div class="row">
+      <a href="/celebrities/{{_id}}/edit" class="btn btn-sm btn-outline-dark">Edit</a>
+      <form action="/celebrities/{{_id}}/delete" method="post">
+        <button type="submit" class="btn btn-warning">Delete</button>
+      </form>
+      </div>
+      <div class="row">
+      <a href="/celebrities" class="btn btn-sm btn-outline-dark">Go back</a>
+      </div>
+    </div>
+  </div>
+</div> 
